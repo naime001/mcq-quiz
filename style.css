@@ -1,18 +1,32 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #000000; /* কালো ব্যাকগ্রাউন্ড */
+    color: #ffffff; /* টেক্সট সাদা করা */
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 0;
 }
 
 .quiz-container {
-    background-color: white;
+    background-color: #333333; /* কুইজ কন্টেইনার গাঢ় ধূসর করা */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     text-align: center;
     max-width: 600px;
     width: 100%;
@@ -21,6 +35,7 @@ body {
 h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    color: #ffffff;
 }
 
 .option {
@@ -32,11 +47,12 @@ h2 {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #e0e0e0;
+    background-color: #555555; /* বাটন গাঢ় ধূসর */
+    color: #ffffff;
 }
 
 .option:hover {
-    background-color: #d0d0d0;
+    background-color: #666666;
 }
 
 .green {
@@ -52,6 +68,7 @@ h2 {
 #feedback {
     margin-top: 20px;
     font-size: 18px;
+    color: #ffffff;
 }
 
 #next-btn {
@@ -67,4 +84,20 @@ h2 {
 
 #next-btn:hover {
     background-color: #1976d2;
+}
+
+.footer {
+    width: 100%;
+    text-align: right;
+    padding: 10px 20px;
+}
+
+.contact-link {
+    color: #2196f3;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
 }
