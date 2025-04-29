@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ কুইজ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h2 id="question"></h2>
+        <div id="options">
+            <button class="option" onclick="checkAnswer('A')">A</button>
+            <button class="option" onclick="checkAnswer('B')">B</button>
+            <button class="option" onclick="checkAnswer('C')">C</button>
+            <button class="option" onclick="checkAnswer('D')">D</button>
+        </div>
+        <div id="feedback"></div>
+        <button id="next-btn" onclick="loadNextQuestion()">পরবর্তী প্রশ্ন</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
