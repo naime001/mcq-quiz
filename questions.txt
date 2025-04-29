@@ -1,0 +1,17 @@
+কোনটি কম্পিউটারের প্রধান স্মৃতি হিসেবে ব্যবহৃত হয়?,ROM,RAM,Cache,Hard Disk
+মানুষের দেহে হৃৎপিণ্ডের প্রধান কাজ কী?,রক্ত পাম্প করা,রক্ত পরিশোধন করা,রক্ত তৈরি করা,রক্ত সংরক্ষণ করা
+নিচের কোনটি একটি প্রোগ্রামিং ভাষা নয়?,HTML,Python,C++,Microsoft
+কম্পিউটারের কোন অংশটি ডেটা প্রসেস করে?,CPU,RAM,Monitor,Keyboard
+কোনটি একটি সফটওয়্যার নয়?,Windows,Photoshop,Microsoft Office,CPU
+DNA-এর পূর্ণরূপ কী?,Deoxyribonucleic Acid,Deoxyribonucleic Atom,Deoxyribonucleic Amine,Deoxyribonucleic Ammonia
+কম্পিউটারের প্রধান উপাদান কয়টি?,২টি,৩টি,৪টি,৫টি
+কোনটি ইন্টারনেটের জন্য প্রয়োজনীয় নয়?,Modem,Router,Switch,Printer
+কম্পিউটার ভাইরাস কী?,একটি প্রোগ্রাম,একটি হার্ডওয়্যার,একটি ফাইল,একটি ডিভাইস
+নিচের কোনটি একটি অপারেটিং সিস্টেম?,Linux,Microsoft Word,Excel,PowerPoint
+কম্পিউটারের কোন অংশটি ডেটা সংরক্ষণ করে?,Hard Disk,CPU,RAM,Monitor
+কম্পিউটারের কোন অংশটি ইনপুট ডিভাইস?,Keyboard,Monitor,Printer,Speaker
+কোনটি একটি ওয়েব ব্রাউজার?,Chrome,Windows,Linux,Android
+কম্পিউটারের কোন অংশটি আউটপুট ডিভাইস?,Monitor,Keyboard,Mouse,Scanner
+কম্পিউটারের কোন অংশটি প্রসেসর নামে পরিচিত?,CPU,RAM,Hard Disk,Monitor
+কম্পিউটারের কোন অংশটি সফটওয়্যার নয়?,CPU,Windows,Linux,Android
+কম্পিউটারের কোন অংশটি সবচেয়ে গুরুত্বপূর্ণ?,CPU,RAM,Monitor,Keyboard
