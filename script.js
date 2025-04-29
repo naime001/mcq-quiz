@@ -1,9 +1,10 @@
 let questions = [];
 let answers = [];
 let currentQuestionIndex = 0;
+let score = 0;
+let totalQuestions = 0;
 
 async function loadFiles() {
-    // প্রশ্ন ফাইল লোড
     const questionResponse = await fetch('questions.txt');
     const questionText = await questionResponse.text();
     questions = questionText.trim().split('\n').map(line => {
@@ -11,17 +12,17 @@ async function loadFiles() {
         return { question, options };
     });
 
-    // উত্তর ফাইল লোড
     const answerResponse = await fetch('answers.txt');
     const answerText = await answerResponse.text();
     answers = answerText.trim().split('\n').map(line => line.split(' ')[1]);
 
+    totalQuestions = questions.length;
     loadQuestion();
 }
 
 function loadQuestion() {
     if (currentQuestionIndex >= questions.length) {
-        document.querySelector('.quiz-container').innerHTML = '<h2>কুইজ শেষ!</h2>';
+        document.querySelector('.quiz-container').innerHTML = `<h2>কুইজ শেষ!</h2><h3>আপনার মোট মার্ক: ${score}/${totalQuestions}</h3>`;
         return;
     }
 
@@ -50,10 +51,11 @@ function checkAnswer(selected) {
         }
     });
 
-    if (selected !== correctAnswer) {
-        document.getElementById('feedback').textContent = `সঠিক উত্তর: ${correctAnswer}. ${questions[currentQuestionIndex].options[correctAnswer.charCodeAt(0) - 65]}`;
-    } else {
+    if (selected === correctAnswer) {
+        score++;
         document.getElementById('feedback').textContent = 'সঠিক উত্তর!';
+    } else {
+        document.getElementById('feedback').textContent = `সঠিক উত্তর: ${correctAnswer}. ${questions[currentQuestionIndex].options[correctAnswer.charCodeAt(0) - 65]}`;
     }
 }
 
@@ -62,5 +64,4 @@ function loadNextQuestion() {
     loadQuestion();
 }
 
-// ফাইল লোড করা শুরু
 loadFiles();
