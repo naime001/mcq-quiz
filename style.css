@@ -6,8 +6,8 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #000000; /* কালো ব্যাকগ্রাউন্ড */
-    color: #ffffff; /* টেক্সট সাদা করা */
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .header {
@@ -18,12 +18,12 @@ body {
 
 .header h1 {
     font-size: 24px;
-    color: #ffffff;
     margin: 0;
+    animation: colorChange 5s infinite;
 }
 
 .quiz-container {
-    background-color: #333333; /* কুইজ কন্টেইনার গাঢ় ধূসর করা */
+    background-color: #333333;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
@@ -32,10 +32,17 @@ body {
     width: 100%;
 }
 
+#marks {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    animation: colorChange 5s infinite;
+}
+
 h2 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #ffffff;
+    animation: colorChange 5s infinite;
 }
 
 .option {
@@ -47,8 +54,9 @@ h2 {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #555555; /* বাটন গাঢ় ধূসর */
+    background-color: #555555;
     color: #ffffff;
+    animation: colorChange 5s infinite;
 }
 
 .option:hover {
@@ -58,17 +66,19 @@ h2 {
 .green {
     background-color: #4caf50 !important;
     color: white;
+    animation: none;
 }
 
 .red {
     background-color: #f44336 !important;
     color: white;
+    animation: none;
 }
 
 #feedback {
     margin-top: 20px;
     font-size: 18px;
-    color: #ffffff;
+    animation: colorChange 5s infinite;
 }
 
 #next-btn {
@@ -80,6 +90,7 @@ h2 {
     color: white;
     border: none;
     border-radius: 5px;
+    animation: colorChange 5s infinite;
 }
 
 #next-btn:hover {
@@ -96,8 +107,18 @@ h2 {
     color: #2196f3;
     text-decoration: none;
     font-size: 16px;
+    animation: colorChange 5s infinite;
 }
 
 .contact-link:hover {
     text-decoration: underline;
+}
+
+@keyframes colorChange {
+    0% { color: #ff0000; }
+    20% { color: #ff9900; }
+    40% { color: #33cc33; }
+    60% { color: #3399ff; }
+    80% { color: #cc33cc; }
+    100% { color: #ff0000; }
 }
